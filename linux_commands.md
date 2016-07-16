@@ -7,4 +7,9 @@ file -s /dev/xvdf
 
 # Make ext4 file system on /dev/xvdf volume
 mkfs -t ext4 /dev/xvdf
+
+# Mount /dev/xvdf volume on /fileserver directory
+mount /dev/xvdf /fileserver
+
+umount /dev/xvdf
 ```
