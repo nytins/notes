@@ -1,3 +1,11 @@
+#### Networking
+```
+netstat -tulpn
+nslookup google.com
+
+# DNS lookup with TTL info
+dig google.com
+```
 #### Disc and Volumes
 ```
 # List volumes and mount points
