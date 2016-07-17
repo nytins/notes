@@ -5,6 +5,12 @@ nslookup google.com
 
 # DNS lookup with TTL info
 dig google.com
+
+# SSH tunneling. localhost:8085-->remote:22-->remote:20005
+ssh -i key.pem -L 8085:10.207.182.20:20005 ec2-user@10.207.182.20
+
+# Listen to port 10000 and write anything received to log
+nc -l localhost 10000 > log.txt
 ```
 #### Disc and Volumes
 ```
